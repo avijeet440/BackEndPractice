@@ -9,7 +9,7 @@ const userSchema = mongoose.Schema({
 
 const userCollection = mongoose.model('User', userSchema);
 (async () => {
-    const connectionIN = await mongoose.connect('mongodb+srv://aviton440_db_user:LbUfX2py6u30RG5c@mycluster1.08i6m7w.mongodb.net/')
+    const connectionIN = await mongoose.connect('/')
     // console.log(connectionIN);
     console.log(connectionIN.connection.host);
 
